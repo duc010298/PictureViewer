@@ -46,7 +46,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(3, 527);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 41);
+            this.button4.Size = new System.Drawing.Size(159, 41);
             this.button4.TabIndex = 4;
             this.button4.Text = "Open";
             this.button4.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::PictureViewer.Properties.Resources.crop;
-            this.button3.Location = new System.Drawing.Point(496, 527);
+            this.button3.Location = new System.Drawing.Point(608, 527);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(241, 41);
+            this.button3.Size = new System.Drawing.Size(214, 41);
             this.button3.TabIndex = 3;
             this.button3.Text = "Cắt ảnh cũ";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -107,9 +107,9 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::PictureViewer.Properties.Resources.crop;
-            this.button2.Location = new System.Drawing.Point(249, 527);
+            this.button2.Location = new System.Drawing.Point(388, 527);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 41);
+            this.button2.Size = new System.Drawing.Size(214, 41);
             this.button2.TabIndex = 2;
             this.button2.Text = "Cắt ảnh thường";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -122,9 +122,9 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::PictureViewer.Properties.Resources.print;
-            this.button1.Location = new System.Drawing.Point(126, 527);
+            this.button1.Location = new System.Drawing.Point(168, 527);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 41);
+            this.button1.Size = new System.Drawing.Size(214, 41);
             this.button1.TabIndex = 1;
             this.button1.Text = "Print";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -137,15 +137,16 @@
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(743, 527);
+            this.button5.Location = new System.Drawing.Point(828, 527);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(245, 41);
+            this.button5.Size = new System.Drawing.Size(160, 41);
             this.button5.TabIndex = 5;
             this.button5.Text = "Quay lại";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
