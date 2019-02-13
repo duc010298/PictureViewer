@@ -7,6 +7,7 @@ namespace PictureViewer {
 
         [STAThread]
         static void Main(String[] args) {
+            //TODO: Debug
             //if(checkRegistry()) {
             //    addRegistry();
             //}

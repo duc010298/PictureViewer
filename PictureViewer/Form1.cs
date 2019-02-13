@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace PictureViewer {
     public partial class Form1 : Form {
 
-        private Bitmap source;
+        private Bitmap source = null;
 
         public Form1() {
             InitializeComponent();
