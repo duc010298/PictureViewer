@@ -90,12 +90,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\picture.png" />
     <None Include="Resources\print_o4k_icon.ico" />
     <None Include="Resources\crop_VBF_icon.ico" />
     <None Include="Resources\undo_arrow_gGY_icon.ico" />
-    <None Include="Resources\undo-arrow1.png" />
-    <None Include="Resources\undo_arrow.bmp" />
-    <None Include="Resources\undo-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
