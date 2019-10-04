@@ -18,6 +18,8 @@ namespace PictureViewer {
             btnCropNormal.Enabled = false;
             btnCropFaceOld.Enabled = false;
             btnCropFaceNew.Enabled = false;
+            btnNewMachineFace.Enabled = false;
+            btnNewMachineNormal.Enabled = false;
             btnPrint.Enabled = false;
         }
 
@@ -34,6 +36,8 @@ namespace PictureViewer {
                 btnCropNormal.Enabled = true;
                 btnCropFaceOld.Enabled = true;
                 btnCropFaceNew.Enabled = true;
+                btnNewMachineFace.Enabled = true;
+                btnNewMachineNormal.Enabled = true;
                 btnPrint.Enabled = true;
             }
         }
@@ -66,6 +70,8 @@ namespace PictureViewer {
             btnCropNormal.Enabled = false;
             btnCropFaceOld.Enabled = false;
             btnCropFaceNew.Enabled = false;
+            btnNewMachineFace.Enabled = false;
+            btnNewMachineNormal.Enabled = false;
         }
 
         private void btnCropFaceOld_Click(object sender, EventArgs e) {
@@ -81,6 +87,8 @@ namespace PictureViewer {
             btnCropNormal.Enabled = false;
             btnCropFaceOld.Enabled = false;
             btnCropFaceNew.Enabled = false;
+            btnNewMachineFace.Enabled = false;
+            btnNewMachineNormal.Enabled = false;
         }
 
 
@@ -97,6 +105,8 @@ namespace PictureViewer {
             btnCropNormal.Enabled = false;
             btnCropFaceOld.Enabled = false;
             btnCropFaceNew.Enabled = false;
+            btnNewMachineFace.Enabled = false;
+            btnNewMachineNormal.Enabled = false;
         }
 
         private void btnUndo_Click(object sender, EventArgs e) {
@@ -105,6 +115,8 @@ namespace PictureViewer {
             btnCropNormal.Enabled = true;
             btnCropFaceOld.Enabled = true;
             btnCropFaceNew.Enabled = true;
+            btnNewMachineFace.Enabled = true;
+            btnNewMachineNormal.Enabled = true;
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
@@ -123,12 +135,52 @@ namespace PictureViewer {
                 btnCropNormal.Enabled = true;
                 btnCropFaceOld.Enabled = true;
                 btnCropFaceNew.Enabled = true;
+                btnNewMachineFace.Enabled = true;
+                btnNewMachineNormal.Enabled = true;
                 btnPrint.Enabled = true;
             }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void btnNewMachineNormal_Click(object sender, EventArgs e)
+        {
+            sourceImg = pictureBox.Image as Bitmap;
+            Rectangle cropRect = new Rectangle(500, 105, 1005, 676);
+            Bitmap target = new Bitmap(cropRect.Width, cropRect.Height);
+            using (Graphics g = Graphics.FromImage(target))
+            {
+                g.DrawImage(sourceImg, new Rectangle(0, 0, target.Width, target.Height), cropRect, GraphicsUnit.Pixel);
+            }
+            target.Save(pathTemp, ImageFormat.Png);
+            pictureBox.Image = target;
+            btnUndo.Enabled = true;
+            btnCropNormal.Enabled = false;
+            btnCropFaceOld.Enabled = false;
+            btnCropFaceNew.Enabled = false;
+            btnNewMachineFace.Enabled = false;
+            btnNewMachineNormal.Enabled = false;
+        }
+
+        private void btnNewMachineFace_Click(object sender, EventArgs e)
+        {
+            sourceImg = pictureBox.Image as Bitmap;
+            Rectangle cropRect = new Rectangle(530, 65, 850, 850);
+            Bitmap target = new Bitmap(cropRect.Width, cropRect.Height);
+            using (Graphics g = Graphics.FromImage(target))
+            {
+                g.DrawImage(sourceImg, new Rectangle(0, 0, target.Width, target.Height), cropRect, GraphicsUnit.Pixel);
+            }
+            target.Save(pathTemp, ImageFormat.Png);
+            pictureBox.Image = target;
+            btnUndo.Enabled = true;
+            btnCropNormal.Enabled = false;
+            btnCropFaceOld.Enabled = false;
+            btnCropFaceNew.Enabled = false;
+            btnNewMachineFace.Enabled = false;
+            btnNewMachineNormal.Enabled = false;
         }
     }
 }

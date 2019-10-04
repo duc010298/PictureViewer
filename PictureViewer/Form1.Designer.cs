@@ -38,6 +38,8 @@
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnNewMachineNormal = new System.Windows.Forms.Button();
+            this.btnNewMachineFace = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -61,13 +63,16 @@
             this.tableLayoutPanel1.Controls.Add(this.btnCropNormal, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnCropFaceOld, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnCropFaceNew, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnNewMachineNormal, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnNewMachineFace, 3, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 24);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1062, 633);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1049, 636);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox
@@ -78,7 +83,7 @@
             this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
             this.pictureBox.Location = new System.Drawing.Point(3, 3);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(1056, 580);
+            this.pictureBox.Size = new System.Drawing.Size(1043, 536);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
@@ -89,10 +94,10 @@
             this.btnUndo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUndo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUndo.Image = ((System.Drawing.Image)(resources.GetObject("btnUndo.Image")));
-            this.btnUndo.Location = new System.Drawing.Point(851, 589);
+            this.btnUndo.Location = new System.Drawing.Point(839, 545);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnUndo.Size = new System.Drawing.Size(208, 41);
+            this.btnUndo.Size = new System.Drawing.Size(207, 42);
             this.btnUndo.TabIndex = 5;
             this.btnUndo.Text = "Quay lại";
             this.btnUndo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -105,9 +110,10 @@
             this.btnPrint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.Image = global::PictureViewer.Properties.Resources.print;
-            this.btnPrint.Location = new System.Drawing.Point(3, 589);
+            this.btnPrint.Location = new System.Drawing.Point(3, 545);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(206, 41);
+            this.tableLayoutPanel1.SetRowSpan(this.btnPrint, 2);
+            this.btnPrint.Size = new System.Drawing.Size(203, 88);
             this.btnPrint.TabIndex = 1;
             this.btnPrint.Text = "Print";
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -120,9 +126,9 @@
             this.btnCropNormal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCropNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCropNormal.Image = global::PictureViewer.Properties.Resources.crop;
-            this.btnCropNormal.Location = new System.Drawing.Point(215, 589);
+            this.btnCropNormal.Location = new System.Drawing.Point(212, 545);
             this.btnCropNormal.Name = "btnCropNormal";
-            this.btnCropNormal.Size = new System.Drawing.Size(206, 41);
+            this.btnCropNormal.Size = new System.Drawing.Size(203, 42);
             this.btnCropNormal.TabIndex = 2;
             this.btnCropNormal.Text = "Cắt ảnh thường";
             this.btnCropNormal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,9 +141,9 @@
             this.btnCropFaceOld.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCropFaceOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCropFaceOld.Image = global::PictureViewer.Properties.Resources.crop;
-            this.btnCropFaceOld.Location = new System.Drawing.Point(427, 589);
+            this.btnCropFaceOld.Location = new System.Drawing.Point(421, 545);
             this.btnCropFaceOld.Name = "btnCropFaceOld";
-            this.btnCropFaceOld.Size = new System.Drawing.Size(206, 41);
+            this.btnCropFaceOld.Size = new System.Drawing.Size(203, 42);
             this.btnCropFaceOld.TabIndex = 3;
             this.btnCropFaceOld.Text = "Cắt ảnh mặt C";
             this.btnCropFaceOld.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -150,9 +156,9 @@
             this.btnCropFaceNew.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCropFaceNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCropFaceNew.Image = global::PictureViewer.Properties.Resources.crop;
-            this.btnCropFaceNew.Location = new System.Drawing.Point(639, 589);
+            this.btnCropFaceNew.Location = new System.Drawing.Point(630, 545);
             this.btnCropFaceNew.Name = "btnCropFaceNew";
-            this.btnCropFaceNew.Size = new System.Drawing.Size(206, 41);
+            this.btnCropFaceNew.Size = new System.Drawing.Size(203, 42);
             this.btnCropFaceNew.TabIndex = 6;
             this.btnCropFaceNew.Text = "Cắt ảnh mặt M";
             this.btnCropFaceNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,7 +172,7 @@
             this.openToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1062, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1049, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -207,11 +213,43 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // btnNewMachineNormal
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.btnNewMachineNormal, 2);
+            this.btnNewMachineNormal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNewMachineNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnNewMachineNormal.Image = global::PictureViewer.Properties.Resources.crop;
+            this.btnNewMachineNormal.Location = new System.Drawing.Point(212, 593);
+            this.btnNewMachineNormal.Name = "btnNewMachineNormal";
+            this.btnNewMachineNormal.Size = new System.Drawing.Size(412, 40);
+            this.btnNewMachineNormal.TabIndex = 2;
+            this.btnNewMachineNormal.Text = "Cắt ảnh thường máy mới";
+            this.btnNewMachineNormal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewMachineNormal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNewMachineNormal.UseVisualStyleBackColor = true;
+            this.btnNewMachineNormal.Click += new System.EventHandler(this.btnNewMachineNormal_Click);
+            // 
+            // btnNewMachineFace
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.btnNewMachineFace, 2);
+            this.btnNewMachineFace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNewMachineFace.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnNewMachineFace.Image = global::PictureViewer.Properties.Resources.crop;
+            this.btnNewMachineFace.Location = new System.Drawing.Point(630, 593);
+            this.btnNewMachineFace.Name = "btnNewMachineFace";
+            this.btnNewMachineFace.Size = new System.Drawing.Size(416, 40);
+            this.btnNewMachineFace.TabIndex = 7;
+            this.btnNewMachineFace.Text = "Cắt ảnh mặt máy mới";
+            this.btnNewMachineFace.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewMachineFace.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNewMachineFace.UseVisualStyleBackColor = true;
+            this.btnNewMachineFace.Click += new System.EventHandler(this.btnNewMachineFace_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 657);
+            this.ClientSize = new System.Drawing.Size(1049, 660);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -245,6 +283,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.Button btnCropFaceNew;
+        private System.Windows.Forms.Button btnNewMachineNormal;
+        private System.Windows.Forms.Button btnNewMachineFace;
     }
 }
 
